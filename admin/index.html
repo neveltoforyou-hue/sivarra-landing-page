@@ -10,11 +10,15 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Netlify Identity widget initialization pointing to external Netlify site -->
+  <!-- Netlify Identity & Decap CMS initialization -->
   <script>
+    const NETLIFY_SITE_URL = "https://precious-stroopwafel-140f1c.netlify.app";
+    // Decap CMS git-gateway backend checks this localStorage key when hosted on external domain
+    localStorage.setItem("netlifySiteURL", NETLIFY_SITE_URL);
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.init({
-        APIUrl: "https://precious-stroopwafel-140f1c.netlify.app/.netlify/identity"
+        APIUrl: NETLIFY_SITE_URL + "/.netlify/identity"
       });
       window.netlifyIdentity.on("init", user => {
         if (!user) {

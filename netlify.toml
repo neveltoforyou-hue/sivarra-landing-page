@@ -1,0 +1,9 @@
+# Netlify Configuration for admin.nevelto.in
+# Redirects root traffic on Netlify directly to /admin/ CMS portal.
+# Vercel hosting for sivarra.nevelto.in completely ignores this file.
+
+[[redirects]]
+  from = "/"
+  to = "/admin/"
+  status = 302
+  force = true

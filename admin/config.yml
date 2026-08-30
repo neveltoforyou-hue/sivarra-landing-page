@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: neveltoforyou-hue/sivarra-landing-page
+  name: git-gateway
   branch: main
 
 # Local development backend support (via decap-server)

@@ -25,8 +25,6 @@ Official landing page for **Sivarra Luxury Salon**, featuring custom animations,
 │   │       └── waiting-area.jpg
 │   └── videos/
 │       ├── about-owner.mp4
-│       ├── mens-hair-cut.mp4
-│       ├── womans-makeup-teej-pooja.mp4
 │       └── moments/
 │           ├── episode-01.mp4 ... episode-10.mp4
 ├── css/

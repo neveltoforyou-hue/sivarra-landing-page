@@ -852,37 +852,6 @@
     z-index: 2;
 }
 
-.map-open-link {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    top: auto;
-    left: auto;
-    z-index: 5;
-    background: #0A0A0A;
-    border: 1px solid var(--gold-1);
-    color: var(--gold-2);
-    font-family: var(--sans);
-    font-size: 0.65rem;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 0.5rem 0.9rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    width: fit-content;
-    max-width: max-content;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.map-open-link:hover {
-    background: var(--gold-grad);
-    color: var(--black);
-    border-color: var(--gold-2);
-}
-
 .map-frame iframe {
     width: 100%;
     height: 100%;

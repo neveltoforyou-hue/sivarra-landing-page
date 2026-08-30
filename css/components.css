@@ -852,6 +852,34 @@
     z-index: 2;
 }
 
+.map-open-link {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 3;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid var(--gold-1);
+    color: var(--gold-2);
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.map-open-link:hover {
+    background: var(--gold-grad);
+    color: var(--black);
+    border-color: var(--gold-2);
+}
+
 .map-frame iframe {
     width: 100%;
     height: 100%;

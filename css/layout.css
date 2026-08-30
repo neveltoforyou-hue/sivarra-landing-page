@@ -295,6 +295,7 @@ section {
     border-radius: 50%;
     z-index: 2;
     background: var(--black);
+    overflow: hidden;
 }
 
 .about-image .ring-deco::after {
@@ -303,6 +304,18 @@ section {
     inset: 8px;
     border: 1px solid var(--hairline);
     border-radius: 50%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ring-deco-img {
+    position: absolute;
+    inset: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 @media (max-width: 880px) {

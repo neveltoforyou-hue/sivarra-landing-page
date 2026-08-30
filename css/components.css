@@ -854,8 +854,10 @@
 
 .map-open-link {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    bottom: 12px;
+    right: 12px;
+    top: auto;
+    left: auto;
     z-index: 5;
     background: #0A0A0A;
     border: 1px solid var(--gold-1);

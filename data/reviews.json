@@ -1,0 +1,22 @@
+{
+  "reviews_list": [
+    {
+      "name": "Aaliya Khan",
+      "locale": "Ashiyana, Lucknow",
+      "quote": "I have never had a colour match my skin undertone the way it did at Sivarra. The chair, the light, the silence — every detail is considered.",
+      "stars": 5
+    },
+    {
+      "name": "Rajat Mehrotra",
+      "locale": "Gomti Nagar, Lucknow",
+      "quote": "Walked in for a trim. Walked out feeling like a different man. The beard sculpt alone is worth the trip across town.",
+      "stars": 5
+    },
+    {
+      "name": "Ira Saxena",
+      "locale": "Hazratganj, Lucknow",
+      "quote": "My bridal look was crafted over three sittings — patient, generous, unhurried. The team treated my mother and me with the same care.",
+      "stars": 5
+    }
+  ]
+}

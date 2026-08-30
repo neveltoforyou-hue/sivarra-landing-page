@@ -1,0 +1,34 @@
+{
+  "photos": [
+    {
+      "caption": "Our Team",
+      "image": "assets/images/gallery/our-team.jpg",
+      "alt": "Our Team"
+    },
+    {
+      "caption": "Facial Suite",
+      "image": "assets/images/gallery/facial-suite.jpg",
+      "alt": "Facial Suite"
+    },
+    {
+      "caption": "Cut & Style",
+      "image": "assets/images/gallery/cut-and-style.jpg",
+      "alt": "Cut & Style"
+    },
+    {
+      "caption": "Spa Chamber",
+      "image": "assets/images/gallery/spa-chamber.jpg",
+      "alt": "Spa Chamber"
+    },
+    {
+      "caption": "Product Shelf",
+      "image": "assets/images/gallery/product-shelf.jpg",
+      "alt": "Product Shelf"
+    },
+    {
+      "caption": "Waiting Area",
+      "image": "assets/images/gallery/waiting-area.jpg",
+      "alt": "Waiting Area"
+    }
+  ]
+}

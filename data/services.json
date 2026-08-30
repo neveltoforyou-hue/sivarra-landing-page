@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "number": "01",
+      "name": "Hair",
+      "description": "Cuts, colour and treatments composed around your face, your hair, your life.",
+      "rituals": [
+        "Signature Cut & Style",
+        "Global Hair Colour",
+        "Keratin Ritual",
+        "Bridal Updo"
+      ],
+      "price_note": "Price on Request"
+    },
+    {
+      "number": "02",
+      "name": "Skin",
+      "description": "Facials, peels and therapies tuned to your skin's own quiet logic.",
+      "rituals": [
+        "24K Gold Facial",
+        "Hydrafresh Signature",
+        "Brightening Peel",
+        "Anti-Ageing Therapy"
+      ],
+      "price_note": "Price on Request"
+    },
+    {
+      "number": "03",
+      "name": "Makeup",
+      "description": "Bridal, occasion and high-definition looks designed to illuminate your features.",
+      "rituals": [
+        "Bridal Signature Look",
+        "Festive / Occasion Glow",
+        "Editorial & HD Makeup",
+        "Airbrush Artistry"
+      ],
+      "price_note": "Price on Request"
+    },
+    {
+      "number": "04",
+      "name": "Spa",
+      "description": "Body rituals and massage, performed in rooms that hush the world outside.",
+      "rituals": [
+        "Aromatherapy Massage",
+        "Hot Stone Ritual",
+        "Body Polish & Glow",
+        "Couple's Retreat"
+      ],
+      "price_note": "Price on Request"
+    },
+    {
+      "number": "05",
+      "name": "Nails",
+      "description": "Manicures, pedicures and bespoke nail couture crafted with immaculate precision.",
+      "rituals": [
+        "Luxury Gel Manicure",
+        "Spa Pedicure Ritual",
+        "Nail Extensions & Art",
+        "Strengthening Therapy"
+      ],
+      "price_note": "Price on Request"
+    }
+  ]
+}

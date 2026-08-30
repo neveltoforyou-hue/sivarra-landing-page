@@ -40,7 +40,7 @@ Official landing page for **Sivarra Luxury Salon**, featuring custom animations,
 
 ## 📍 Location & Contact
 - **Address**: 2nd Floor, A/855, Sector I, Kanpur Road Yojana, LDA Colony, near Brijwasi Bakery, Ashiyana, Lucknow, Uttar Pradesh 226012
-- **Phone / WhatsApp**: [+91 63924 51166](https://wa.me/916392451166)
+- **Phone / WhatsApp**: [+91 77091 95927](https://wa.me/917709195927)
 - **Instagram**: [@sivarra.salon](https://instagram.com/sivarra.salon)
 
 ## 💻 Crafted by

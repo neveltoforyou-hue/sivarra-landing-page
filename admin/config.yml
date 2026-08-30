@@ -1,0 +1,90 @@
+backend:
+  name: github
+  repo: neveltoforyou-hue/sivarra-landing-page
+  branch: main
+
+# Local development backend support (via decap-server)
+local_backend: true
+
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+collections:
+  # 1. General & Contact Information (Low-risk)
+  - name: "general"
+    label: "Contact & Salon Info"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "contact"
+        label: "Contact Details & Hours"
+        file: "data/contact.json"
+        fields:
+          - { label: "Phone & WhatsApp Number", name: "phone", widget: "string", default: "7709195927" }
+          - { label: "Address Line 1", name: "address_line1", widget: "string", default: "2nd Floor, A/855, Sector I, Kanpur Road Yojana, LDA Colony" }
+          - { label: "Address Line 2", name: "address_line2", widget: "string", default: "near Brijwasi Bakery, Ashiyana, Lucknow, Uttar Pradesh 226012" }
+          - { label: "Hours: Tue - Fri", name: "hours_weekday", widget: "string", default: "10:00 — 21:00" }
+          - { label: "Hours: Saturday", name: "hours_saturday", widget: "string", default: "10:00 — 21:00" }
+          - { label: "Hours: Sunday", name: "hours_sunday", widget: "string", default: "11:00 — 18:00" }
+          - { label: "Hours: Monday", name: "hours_monday", widget: "string", default: "Closed" }
+
+  # 2. Gallery Images & Captions (Low-risk)
+  - name: "gallery"
+    label: "Gallery"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "items"
+        label: "Gallery Photos & Captions"
+        file: "data/gallery.json"
+        fields:
+          - label: "Gallery Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - { label: "Title / Caption", name: "caption", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+
+  # 3. Testimonials / Reviews (Low-risk)
+  - name: "testimonials"
+    label: "Testimonials"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "reviews"
+        label: "Client Reviews"
+        file: "data/reviews.json"
+        fields:
+          - label: "Reviews List"
+            name: "reviews_list"
+            widget: "list"
+            fields:
+              - { label: "Client Name", name: "name", widget: "string" }
+              - { label: "Location / Subtitle", name: "locale", widget: "string" }
+              - { label: "Review Text", name: "quote", widget: "text" }
+              - { label: "Rating Stars (1-5)", name: "stars", widget: "number", default: 5, min: 1, max: 5 }
+
+  # 4. Services (Low-risk)
+  - name: "services"
+    label: "Services"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "services_data"
+        label: "Service Categories"
+        file: "data/services.json"
+        fields:
+          - label: "Service Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Category Name", name: "name", widget: "string" }
+              - { label: "Category Number", name: "number", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Rituals List", name: "rituals", widget: "list", field: { label: "Ritual Name", name: "item", widget: "string" } }
+              - { label: "Pricing Note", name: "price_note", widget: "string", default: "Price on Request" }

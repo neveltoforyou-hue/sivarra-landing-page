@@ -1,0 +1,2 @@
+# Netlify Redirects for admin portal
+/   /admin/   302!

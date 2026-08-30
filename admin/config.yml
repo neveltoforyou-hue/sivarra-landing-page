@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://precious-stroopwafel-140f1c.netlify.app/.netlify/identity
+  gateway_url: https://precious-stroopwafel-140f1c.netlify.app/.netlify/git
 
 # Local development backend support (via decap-server)
 local_backend: true

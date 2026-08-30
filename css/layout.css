@@ -55,12 +55,19 @@ section {
    ========================================================= */
 .hero {
     min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
     padding: 8rem 0 5rem;
+}
+
+@supports not (min-height: 100svh) {
+    .hero {
+        min-height: 100vh;
+    }
 }
 
 .hero-bg {
@@ -93,7 +100,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(110vw, 820px);
+    width: min(95vw, 820px);
+    max-width: 100%;
     aspect-ratio: 1;
     z-index: 1;
     pointer-events: none;
@@ -332,6 +340,13 @@ section {
         max-width: 100%;
         margin: 0 auto;
     }
+
+    .about-image .ring-deco {
+        top: -15px;
+        right: -10px;
+        width: 76px;
+        height: 76px;
+    }
 }
 
 /* ----- placeholder visual block (used throughout) ----- */
@@ -345,24 +360,21 @@ section {
     gap: 0.6rem;
     color: var(--gold-2);
     position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 1.5rem;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .placeholder::before {
     content: '';
     position: absolute;
-    inset: 12px;
-    border: 1px solid var(--hairline);
-    pointer-events: none;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(201, 162, 75, 0.08) 0%, transparent 70%);
 }
 
 .placeholder .ph-label {
-    font-family: var(--serif);
-    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    font-family: var(--sans);
+    font-size: 0.72rem;
     font-weight: 500;
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -497,9 +509,9 @@ section {
     padding: 0.5rem 0 2rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
     scrollbar-color: var(--gold-1) transparent;
     scrollbar-width: thin;
-    scroll-behavior: smooth;
 }
 
 .reels-strip::-webkit-scrollbar {

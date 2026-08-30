@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
+    <script>
+        if (location.hostname === 'admin.nevelto.in' && (location.pathname === '/' || location.pathname === '')) {
+            window.location.replace('/admin/');
+            document.write('<meta http-equiv="refresh" content="0;url=/admin/">');
+        }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Sivarra — Luxury Unisex Salon, Ashiyana, Lucknow. Master hair, skin, makeup, spa and nail ateliers for him and for her." />
     <meta name="theme-color" content="#0A0A0A" />
     <title>Sivarra · Luxury Unisex Salon · Lucknow</title>
-    <script>
-        if (window.location.hostname === 'admin.nevelto.in' && window.location.pathname === '/') {
-            window.location.replace('/admin/');
-        }
-    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/images/brand-logo.jpg">

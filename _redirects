@@ -1,2 +1,4 @@
 # Netlify Redirects for admin portal
-/   /admin/   302!
+https://admin.nevelto.in/  /admin/  302!
+https://admin.nevelto.in/index.html  /admin/  302!
+/  /admin/  302!

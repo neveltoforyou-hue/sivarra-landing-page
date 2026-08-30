@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sivarra — Luxury Unisex Salon, Ashiyana, Lucknow. Master hair, skin, makeup, spa and nail ateliers for him and for her." />
+    <meta name="theme-color" content="#0A0A0A" />
+    <title>Sivarra · Luxury Unisex Salon · Lucknow</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/assets/images/brand-logo.jpg">
+
+    <!-- Fonts: Cormorant Garamond for serif headings, Inter for tracked-caps labels -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets — loaded in cascade order -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <div class="nav-left">
+                <a href="#home" class="logo" aria-label="Sivarra — Luxury Salon, Lucknow">
+                    <span class="logo-mark"><img src="/assets/images/brand-logo.jpg" alt="Sivarra Luxury Salon logo"></span>
+                    <span class="logo-text">
+                        <span class="logo-word">Sivarra</span>
+                        <span class="logo-tag">Luxury Salon</span>
+                    </span>
+                </a>
+            </div>
+
+            <nav class="nav-center">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#moments">Moments</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <a href="#book" class="btn nav-book">Book Now</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+       HERO
+       ============================================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img class="hero-image" src="/assets/images/hero-interior.jpg" alt="Sivarra salon interior" />
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Faint concentric gold rings + arc, echoing the monogram's circle -->
+        <svg class="hero-rings" viewBox="0 0 800 800" aria-hidden="true">
+            <defs>
+                <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#C9A24B" stop-opacity="0.6" />
+                    <stop offset="50%" stop-color="#E8C979" stop-opacity="0.8" />
+                    <stop offset="100%" stop-color="#C9A24B" stop-opacity="0.4" />
+                </linearGradient>
+            </defs>
+            <circle cx="400" cy="400" r="399" fill="none" stroke="rgba(201,162,75,0.16)" stroke-width="1" />
+            <circle cx="400" cy="400" r="340" fill="none" stroke="rgba(201,162,75,0.12)" stroke-width="1" />
+            <circle cx="400" cy="400" r="270" fill="none" stroke="rgba(201,162,75,0.08)" stroke-width="1" />
+            <!-- horizon arc, brighter -->
+            <path d="M 60 400 A 340 340 0 0 1 740 400" fill="none" stroke="url(#goldStroke)" stroke-width="1.5" />
+            <!-- quarter arc, brightest -->
+            <path d="M 400 60 A 340 340 0 0 1 740 400" fill="none" stroke="rgba(232,201,121,0.55)" stroke-width="1.2" />
+            <!-- cardinal ticks -->
+            <line x1="400" y1="22" x2="400" y2="42" stroke="#E8C979" stroke-width="1" opacity="0.7" />
+            <line x1="400" y1="758" x2="400" y2="778" stroke="#E8C979" stroke-width="1" opacity="0.5" />
+            <line x1="22" y1="400" x2="42" y2="400" stroke="#E8C979" stroke-width="1" opacity="0.5" />
+            <line x1="758" y1="400" x2="778" y2="400" stroke="#E8C979" stroke-width="1" opacity="0.5" />
+            <!-- cardinal dots -->
+            <circle cx="400" cy="30" r="2.5" fill="#E8C979" opacity="0.9" />
+            <circle cx="770" cy="400" r="2" fill="#E8C979" opacity="0.6" />
+            <circle cx="400" cy="770" r="2" fill="#E8C979" opacity="0.5" />
+            <circle cx="30" cy="400" r="2" fill="#E8C979" opacity="0.5" />
+        </svg>
+
+        <!-- Rotating brand seal, desktop only -->
+        <svg class="hero-seal" viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+                <path id="sealCircle" d="M 60,60 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0" />
+            </defs>
+            <circle cx="60" cy="60" r="42" fill="none" stroke="#C9A24B" stroke-width="0.6" opacity="0.7" />
+            <circle cx="60" cy="60" r="32" fill="none" stroke="rgba(201,162,75,0.35)" stroke-width="0.5" />
+            <text font-family="Inter, sans-serif" font-size="6.5" font-weight="500" letter-spacing="2.5" fill="#E8C979">
+                <textPath href="#sealCircle">SIVARRA · LUXURY SALON · LUCKNOW · EST. 2026 · </textPath>
+            </text>
+            <text x="60" y="64" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="14"
+                fill="#E8C979">S</text>
+        </svg>
+
+        <div class="hero-content reveal">
+            <div class="hero-eyebrow">Est. 2026 · Lucknow</div>
+            <h1 class="hero-title gold-text">Sivarra</h1>
+            <p class="hero-tagline">Unveiling the Best in You</p>
+            <div class="hero-cta">
+                <a href="#book" class="btn btn-large">Book Appointment</a>
+                <a href="https://wa.me/916292451166" class="btn btn-large" target="_blank" rel="noopener">WhatsApp
+                    Us</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <span class="hero-scroll-line"></span>
+        </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============================================================
+       ABOUT / BRAND STORY
+       ============================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <span class="eyebrow">The House of Sivarra</span>
+                    <h2>Beauty, as <span class="gold-text">ritual.</span></h2>
+                    <p>Sivarra is a sanctuary for those who treat beauty as ritual. Situated in the heart of Ashiyana,
+                        our atelier brings master hair artisans, skin aestheticians, makeup artists, and spa therapists
+                        under a single, considered roof.</p>
+                    <p>No spectacle, no templates — only patient, generous craft. Our chairs welcome him and her with
+                        equal reverence, because luxury, to us, is intimacy.</p>
+
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <span class="num">05</span>
+                            <span class="label">Master Stylists</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="num">40+</span>
+                            <span class="label">Signature Rituals</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="num">12k</span>
+                            <span class="label">Clients Welcomed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image reveal d1">
+                    <div class="about-video-wrap">
+                        <video id="aboutVideo" src="/assets/videos/about-owner.mp4" autoplay muted loop playsinline poster="/assets/images/our-team.png"></video>
+                        <button class="about-mute-btn" id="aboutMuteBtn" aria-label="Unmute video" title="Toggle sound">
+                            <!-- Muted icon (default) -->
+                            <svg class="icon-muted" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                            </svg>
+                            <!-- Unmuted icon -->
+                            <svg class="icon-unmuted" viewBox="0 0 24 24" aria-hidden="true" style="display: none;">
+                                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="ring-deco"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============================================================
+       SERVICES — 5 Categories
+       ============================================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">What we practice</span>
+                <h2 class="serif gold-text">Services</h2>
+                <p class="lead">Five ateliers, one sanctuary. Each ritual is performed with patience — with the same
+                    reverence for him and for her.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 01 Hair -->
+                <article class="service-card reveal">
+                    <div class="service-num serif">01</div>
+                    <h3 class="service-name">Hair</h3>
+                    <p class="service-desc">Cuts, colour and treatments composed around your face, your hair, your life.
+                    </p>
+                    <div class="service-rule"></div>
+                    <ul class="service-list">
+                        <li>Signature Cut &amp; Style</li>
+                        <li>Global Hair Colour</li>
+                        <li>Keratin Ritual</li>
+                        <li>Bridal Updo</li>
+                    </ul>
+                    <div class="service-starting">
+                        <span class="price-on-req">Price on Request</span>
+                    </div>
+                </article>
+
+                <!-- 02 Skin -->
+                <article class="service-card reveal d1">
+                    <div class="service-num serif">02</div>
+                    <h3 class="service-name">Skin</h3>
+                    <p class="service-desc">Facials, peels and therapies tuned to your skin's own quiet logic.</p>
+                    <div class="service-rule"></div>
+                    <ul class="service-list">
+                        <li>24K Gold Facial</li>
+                        <li>Hydrafresh Signature</li>
+                        <li>Brightening Peel</li>
+                        <li>Anti-Ageing Therapy</li>
+                    </ul>
+                    <div class="service-starting">
+                        <span class="price-on-req">Price on Request</span>
+                    </div>
+                </article>
+
+                <!-- 03 Makeup -->
+                <article class="service-card reveal d2">
+                    <div class="service-num serif">03</div>
+                    <h3 class="service-name">Makeup</h3>
+                    <p class="service-desc">Bridal, occasion and high-definition looks designed to illuminate your features.</p>
+                    <div class="service-rule"></div>
+                    <ul class="service-list">
+                        <li>Bridal Signature Look</li>
+                        <li>Festive / Occasion Glow</li>
+                        <li>Editorial &amp; HD Makeup</li>
+                        <li>Airbrush Artistry</li>
+                    </ul>
+                    <div class="service-starting">
+                        <span class="price-on-req">Price on Request</span>
+                    </div>
+                </article>
+
+                <!-- 04 Spa -->
+                <article class="service-card reveal d3">
+                    <div class="service-num serif">04</div>
+                    <h3 class="service-name">Spa</h3>
+                    <p class="service-desc">Body rituals and massage, performed in rooms that hush the world outside.
+                    </p>
+                    <div class="service-rule"></div>
+                    <ul class="service-list">
+                        <li>Aromatherapy Massage</li>
+                        <li>Hot Stone Ritual</li>
+                        <li>Body Polish &amp; Glow</li>
+                        <li>Couple's Retreat</li>
+                    </ul>
+                    <div class="service-starting">
+                        <span class="price-on-req">Price on Request</span>
+                    </div>
+                </article>
+
+                <!-- 05 Nails -->
+                <article class="service-card reveal d4">
+                    <div class="service-num serif">05</div>
+                    <h3 class="service-name">Nails</h3>
+                    <p class="service-desc">Manicures, pedicures and bespoke nail couture crafted with immaculate precision.</p>
+                    <div class="service-rule"></div>
+                    <ul class="service-list">
+                        <li>Luxury Gel Manicure</li>
+                        <li>Spa Pedicure Ritual</li>
+                        <li>Nail Extensions &amp; Art</li>
+                        <li>Strengthening Therapy</li>
+                    </ul>
+                    <div class="service-starting">
+                        <span class="price-on-req">Price on Request</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============================================================
+       GALLERY — 6 curated atelier images
+       ============================================================ -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Inside the atelier</span>
+                <h2 class="serif gold-text">Gallery</h2>
+                <p class="lead">A walk through our chairs, our mirrors, our rituals.</p>
+            </div>
+
+            <div class="gallery-grid reveal">
+                <!-- 1. Our Team -->
+                <figure class="gallery-item">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+                        class="corner br"></span>
+                    <img src="/assets/images/gallery/our-team.jpg" alt="Our Team" loading="lazy">
+                    <div class="overlay"></div>
+                    <span class="gallery-caption">Our Team</span>
+                </figure>
+
+                <!-- 2. Facial Suite -->
+                <figure class="gallery-item">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+                        class="corner br"></span>
+                    <img src="/assets/images/gallery/facial-suite.jpg" alt="Facial Suite" loading="lazy">
+                    <div class="overlay"></div>
+                    <span class="gallery-caption">Facial Suite</span>
+                </figure>
+
+                <!-- 3. Cut & Style -->
+                <figure class="gallery-item">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+                        class="corner br"></span>
+                    <img src="/assets/images/gallery/cut-and-style.jpg" alt="Cut & Style" loading="lazy">
+                    <div class="overlay"></div>
+                    <span class="gallery-caption">Cut &amp; Style</span>
+                </figure>
+
+                <!-- 4. Spa Chamber -->
+                <figure class="gallery-item">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+                        class="corner br"></span>
+                    <img src="/assets/images/gallery/spa-chamber.jpg" alt="Spa Chamber" loading="lazy">
+                    <div class="overlay"></div>
+                    <span class="gallery-caption">Spa Chamber</span>
+                </figure>
+
+                <!-- 5. Product Shelf -->
+                <figure class="gallery-item">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+                        class="corner br"></span>
+                    <img src="/assets/images/gallery/product-shelf.jpg" alt="Product Shelf" loading="lazy">
+                    <div class="overlay"></div>
+                    <span class="gallery-caption">Product Shelf</span>
+                </figure>
+
+                <!-- 6. Waiting Area -->
+                <figure class="gallery-item">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+                        class="corner br"></span>
+                    <img src="/assets/images/gallery/waiting-area.jpg" alt="Waiting Area" loading="lazy">
+                    <div class="overlay"></div>
+                    <span class="gallery-caption">Waiting Area</span>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============================================================
+       MOMENTS (VIDEO STRIP)
+       ============================================================ -->
+    <section class="reels" id="moments">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">In motion</span>
+                <h2 class="serif gold-text">Moments</h2>
+                <p class="lead">Colour, cuts, calm — a few moments from the chair.</p>
+            </div>
+
+            <!-- Horizontally scrollable row of 9:16 vertical cards -->
+            <div class="reels-strip-wrap reveal">
+                <div class="reels-strip" id="momentsStrip">
+                    <!-- 1. Moment 01 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-01.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 01</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 3. Moment 02 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-02.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 02</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 4. Moment 03 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-03.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 03</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 5. Moment 04 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-04.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 04</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 6. Moment 05 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-05.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 05</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 7. Moment 06 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-06.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 06</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 8. Moment 07 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-07.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 07</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 9. Moment 08 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-08.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 08</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 10. Moment 09 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-09.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 09</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 11. Moment 10 -->
+                    <article class="reel-card">
+                        <video src="/assets/videos/moments/episode-10.mp4" muted loop playsinline></video>
+                        <span class="reel-caption">Moment · 10</span>
+                        <button class="play-icon" aria-label="Tap to unmute">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7L8 5z" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- 12. More on Instagram Card -->
+                    <a href="https://instagram.com/sivarra.salon" target="_blank" rel="noopener" class="reel-card instagram-card">
+                        <div class="insta-card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.06 1.8.25 2.2.42.6.2 1 .5 1.4 1 .5.4.8.8 1 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-1 1.4-.4.5-.8.8-1.4 1-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-1-.5-.4-.8-.8-1-1.4-.2-.4-.4-1-.4-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.07-4.8c.06-1.2.25-1.8.42-2.2.2-.6.5-1 1-1.4.4-.5.8-.8 1.4-1 .4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-.9.05-1.4.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.3-.25.8-.3 1.7-.07 1.2-.07 1.6-.07 4.7s0 3.5.07 4.7c.05.9.2 1.4.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.3.1.8.25 1.7.3 1.2.07 1.6.07 4.7.07s3.5 0 4.7-.07c.9-.05 1.4-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.3.25-.8.3-1.7.07-1.2.07-1.6.07-4.7s0-3.5-.07-4.7c-.05-.9-.2-1.4-.3-1.7-.2-.4-.4-.7-.7-1-.3-.3-.6-.5-1-.7-.3-.1-.8-.25-1.7-.3C15.5 4 15.1 4 12 4zm0 3.05A4.95 4.95 0 1 1 7.05 12 4.96 4.96 0 0 1 12 7.05zm0 1.8A3.15 3.15 0 1 0 15.15 12 3.16 3.16 0 0 0 12 8.85zm5.15-.95a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15z"/>
+                            </svg>
+                        </div>
+                        <span class="insta-card-text">More on Instagram</span>
+                        <span class="insta-card-sub">@sivarra.salon →</span>
+                    </a>
+                </div>
+
+                <!-- Prev / Next Navigation Controls -->
+                <div class="reels-nav-container">
+                    <button class="reel-nav-btn" id="momentsPrev" aria-label="Scroll previous moments" title="Previous">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    <span class="reels-hint">Swipe or Scroll</span>
+                    <button class="reel-nav-btn" id="momentsNext" aria-label="Scroll next moments" title="Next">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============================================================
+       TESTIMONIALS / REVIEWS
+       ============================================================ -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">From our chairs</span>
+                <h2 class="serif gold-text">Reviews</h2>
+                <p class="lead">A few quiet words from the people who sit in them.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="quote-card reveal">
+                    <div class="quote-mark"><span>"</span></div>
+                    <p class="quote-text">I have never had a colour match my skin undertone the way it did at Sivarra.
+                        The chair, the light, the silence — every detail is considered.</p>
+                    <div class="quote-stars" aria-label="5 out of 5 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                    </div>
+                    <div class="quote-author">Aaliya Khan<span class="locale">Ashiyana, Lucknow</span></div>
+                </article>
+
+                <article class="quote-card reveal d1">
+                    <div class="quote-mark"><span>"</span></div>
+                    <p class="quote-text">Walked in for a trim. Walked out feeling like a different man. The beard
+                        sculpt alone is worth the trip across town.</p>
+                    <div class="quote-stars" aria-label="5 out of 5 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                    </div>
+                    <div class="quote-author">Rajat Mehrotra<span class="locale">Gomti Nagar, Lucknow</span></div>
+                </article>
+
+                <article class="quote-card reveal d2">
+                    <div class="quote-mark"><span>"</span></div>
+                    <p class="quote-text">My bridal look was crafted over three sittings — patient, generous, unhurried.
+                        The team treated my mother and me with the same care.</p>
+                    <div class="quote-stars" aria-label="5 out of 5 stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1.1 6.1L12 16.9 5.4 19.4l1.1-6.1L2 8.9 8 8z" /></svg>
+                    </div>
+                    <div class="quote-author">Ira Saxena<span class="locale">Hazratganj, Lucknow</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============================================================
+       LOCATION
+       ============================================================ -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Find us</span>
+                <h2 class="serif gold-text">Location</h2>
+                <p class="lead">In the bustling neighborhood of Ashiyana — look for the gold ring on the door.</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info reveal">
+                    <div class="location-block">
+                        <span class="label">Address</span>
+                        <p class="value">2nd Floor, A/855, Sector I,<br>Kanpur Road Yojana, LDA Colony,<br>near Brijwasi Bakery, Ashiyana,<br>Lucknow, Uttar Pradesh 226012</p>
+                    </div>
+
+                    <div class="location-block">
+                        <span class="label">Reservations</span>
+                        <a href="tel:+916292451166" class="value">+91 62924 51166</a>
+                    </div>
+
+                    <div class="location-block">
+                        <span class="label">Hours</span>
+                        <ul class="hours-list">
+                            <li><span class="day">Tue — Fri</span><span class="time">10:00 — 21:00</span></li>
+                            <li><span class="day">Saturday</span><span class="time">10:00 — 21:00</span></li>
+                            <li><span class="day">Sunday</span><span class="time">11:00 — 18:00</span></li>
+                            <li><span class="day">Monday</span><span class="time closed">Closed</span></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <a href="#book" class="btn">Reserve Your Chair</a>
+                    </div>
+                </div>
+
+                <div class="map-frame reveal d1">
+                    <!-- Google Maps embed for Ashiyana, Lucknow location. Dark-mode filtered via CSS. -->
+                    <iframe title="Sivarra salon location in Ashiyana, Lucknow"
+                        src="https://www.google.com/maps?q=2nd+Floor,+A/855,+Sector+I,+Kanpur+Road+Yojana,+LDA+Colony,+near+Brijwasi+Bakery,+Ashiyana,+Lucknow,+Uttar+Pradesh+226012&output=embed"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       CTA STRIP — final Reserve Your Chair
+       ============================================================ -->
+    <section class="cta-strip" id="book">
+        <div class="container">
+            <div class="cta-content reveal">
+                <span class="eyebrow">Reservations</span>
+                <h2 class="serif gold-text">Reserve Your Chair</h2>
+                <p class="lead">Walk-ins are welcome, but the chairs that wait for you are the ones booked in advance.
+                    Reach us on WhatsApp, or call the front desk — we'll find you a chair.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/916292451166" class="btn btn-large" target="_blank" rel="noopener">WhatsApp
+                        Us</a>
+                    <a href="tel:+916292451166" class="btn btn-large">Call the Desk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-mono reveal"><img src="/assets/images/brand-logo.jpg" alt="Sivarra Luxury Salon logo"></div>
+            <div class="footer-word reveal d1">Sivarra</div>
+            <div class="footer-tag reveal d2">Luxury Salon · Lucknow</div>
+
+            <div class="footer-social reveal d3">
+                <a class="social-link" href="https://instagram.com/sivarra.salon" target="_blank" rel="noopener"
+                    aria-label="Sivarra on Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.06 1.8.25 2.2.42.6.2 1 .5 1.4 1 .5.4.8.8 1 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-1 1.4-.4.5-.8.8-1.4 1-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-1-.5-.4-.8-.8-1-1.4-.2-.4-.4-1-.4-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.07-4.8c.06-1.2.25-1.8.42-2.2.2-.6.5-1 1-1.4.4-.5.8-.8 1.4-1 .4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-.9.05-1.4.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.3-.25.8-.3 1.7-.07 1.2-.07 1.6-.07 4.7s0 3.5.07 4.7c.05.9.2 1.4.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.3.1.8.25 1.7.3 1.2.07 1.6.07 4.7.07s3.5 0 4.7-.07c.9-.05 1.4-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.3.25-.8.3-1.7.07-1.2.07-1.6.07-4.7s0-3.5-.07-4.7c-.05-.9-.2-1.4-.3-1.7-.2-.4-.4-.7-.7-1-.3-.3-.6-.5-1-.7-.3-.1-.8-.25-1.7-.3C15.5 4 15.1 4 12 4zm0 3.05A4.95 4.95 0 1 1 7.05 12 4.96 4.96 0 0 1 12 7.05zm0 1.8A3.15 3.15 0 1 0 15.15 12 3.16 3.16 0 0 0 12 8.85zm5.15-.95a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15z" />
+                    </svg>
+                </a>
+            </div>
+
+            <p class="footer-ig-handle reveal d3">@sivarra.salon</p>
+
+            <div class="footer-bottom">
+                <span>© 2026 Sivarra Luxury Salon</span>
+                <span>Ashiyana · Lucknow · India</span>
+                <a href="#home">Back to top ↑</a>
+            </div>
+            <span class="footer-credit">
+                Crafted by <a href="https://nevelto.in" target="_blank" rel="noopener">Nevelto</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+       ============================================================ -->
+    <a class="whatsapp-float" href="https://wa.me/916292451166" target="_blank" rel="noopener"
+        aria-label="Chat with Sivarra on WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path
+                d="M19.11 17.21c-.37 0-1.09 1.09-1.42 1.09-.25 0-.66-.25-.99-.41-.95-.49-2.97-1.87-3.46-2.85-.25-.49.25-.74.57-1.07.17-.16.25-.33.25-.49 0-.25-.57-1.32-.74-1.73-.25-.57-.57-.57-.74-.57-.16 0-.41 0-.57 0-.25 0-.57.16-.74.41-.25.25-1.07 1.07-1.07 2.64 0 1.57 1.15 3.05 1.32 3.3.16.25 2.14 3.47 5.36 4.77 3.22 1.3 3.22.82 3.8.82.57 0 1.81-.74 2.06-1.48.25-.74.25-1.32.16-1.48-.08-.16-.33-.25-.66-.41M16.03 0C7.19 0 0 7.19 0 16.03c0 2.82.74 5.49 2.06 7.84L0 32l8.29-2.02c2.26 1.23 4.88 1.94 7.74 1.94 8.84 0 16.03-7.19 16.03-16.03C32.06 7.19 24.87 0 16.03 0z" />
+        </svg>
+    </a>
+
+    <!-- Scripts — loaded at end of body -->
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/scroll-reveal.js" defer></script>
+    <script src="/js/reels.js" defer></script>
+</body>
+
+</html>

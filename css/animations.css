@@ -1,0 +1,126 @@
+/* =========================================================
+   SIVARRA — animations.css
+   All keyframe animations, scroll-triggered reveal
+   transitions, and the prefers-reduced-motion override.
+   Loaded last so transition properties can override
+   component defaults where needed.
+   ========================================================= */
+
+/* ----- Hero seal rotation ----- */
+.hero-seal {
+    animation: rotate 32s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----- Hero scroll indicator ----- */
+.hero-scroll-line::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 1px;
+    height: 50%;
+    background: var(--gold-2);
+    animation: scrollDot 2.4s ease-in-out infinite;
+}
+
+@keyframes scrollDot {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+/* ----- WhatsApp pulse ring ----- */
+.whatsapp-float::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 1px solid var(--hairline);
+    border-radius: 50%;
+    animation: wa-pulse 2.4s ease-out infinite;
+    pointer-events: none;
+}
+
+@keyframes wa-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* =========================================================
+   SCROLL REVEAL
+   Applied via IntersectionObserver in scroll-reveal.js.
+   Elements start invisible + shifted down, then transition
+   to their natural position when .in is added.
+   ========================================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.2, 0.65, 0.2, 1),
+        transform 1s cubic-bezier(0.2, 0.65, 0.2, 1);
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.d1 {
+    transition-delay: 0.1s;
+}
+
+.reveal.d2 {
+    transition-delay: 0.2s;
+}
+
+.reveal.d3 {
+    transition-delay: 0.3s;
+}
+
+.reveal.d4 {
+    transition-delay: 0.4s;
+}
+
+/* =========================================================
+   REDUCED MOTION — kill all animation gracefully
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero-scroll-line::after {
+        animation: none;
+    }
+
+    .whatsapp-float::before {
+        animation: none;
+    }
+
+    .hero-seal {
+        animation: none;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

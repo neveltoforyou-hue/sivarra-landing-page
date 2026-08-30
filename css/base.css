@@ -1,0 +1,120 @@
+/* =========================================================
+   SIVARRA — base.css
+   Foundation layer: CSS custom properties (brand tokens),
+   element resets, and typography primitives.
+   This file is loaded first; every other stylesheet depends
+   on the variables defined here.
+   ========================================================= */
+
+/* ----- Brand Tokens -----
+   Change --gold-grad and --hairline and the whole site reskins.
+   Strict black + gold + off-white only.                      */
+:root {
+    --black: #0A0A0A;
+    --black-soft: #121212;
+    --black-card: #0E0E0E;
+    --gold-1: #C9A24B;
+    --gold-2: #E8C979;
+    --gold-grad: linear-gradient(135deg, #C9A24B 0%, #E8C979 50%, #C9A24B 100%);
+    --off-white: #F5F1E8;
+    --muted: rgba(245, 241, 232, 0.55);
+    --hairline: rgba(201, 162, 75, 0.32);
+    --hairline-strong: rgba(201, 162, 75, 0.6);
+
+    --serif: 'Cormorant Garamond', 'EB Garamond', serif;
+    --sans: 'Inter', 'Manrope', system-ui, sans-serif;
+
+    --max: 1280px;
+    --pad: clamp(1.25rem, 4vw, 4rem);
+}
+
+/* ----- Reset ----- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--off-white);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.65;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+code {
+    font-family: var(--sans);
+    font-size: 0.78em;
+    color: var(--gold-2);
+    letter-spacing: 0.04em;
+}
+
+::selection {
+    background: var(--gold-1);
+    color: var(--black);
+}
+
+/* offset in-page anchors for the fixed nav */
+section[id],
+footer[id] {
+    scroll-margin-top: 80px;
+}
+
+/* ----- Typography Primitives ----- */
+.serif {
+    font-family: var(--serif);
+}
+
+.eyebrow,
+.label {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold-2);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--serif);
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1.08;
+}
+
+.gold-text {
+    background: var(--gold-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

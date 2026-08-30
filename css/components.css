@@ -1026,9 +1026,17 @@
     color: var(--gold-2);
 }
 
-.footer-credit {
-    display: block;
+.footer-credit-wrap {
+    width: 100%;
+    text-align: center;
     margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-credit {
+    display: inline-block;
     font-family: var(--sans);
     font-size: 0.55rem;
     font-weight: 400;
